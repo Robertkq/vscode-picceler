@@ -2,7 +2,7 @@
   "name": "vscode-picceler",
   "displayName": "Picceler Language Support",
   "description": "Language support for picceler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Robertkq",
   "icon": "images/icon.png",
   "repository": {
