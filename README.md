@@ -42,12 +42,19 @@ Describe specific features of your extension including screenshots of your exten
 
 ## Release Notes
 
-### 0.0.1
+### 0.0.2
 
 * Initial release of Picceler VS Code extension.
 * Added syntax highlighting for core control structures, comments (`#`), strings, and all 22 TableGen dialect operations.
 * Added native bracket matching and auto-closing configurations for `.pic` files.
+* fix demo gif, add more documentation on HOWTO, AI assistance notice
 
 ---
 
-**Enjoy!**
+## Developer note
+
+* **AI Assistance:** This extension, its syntax highlighting configurations, and supporting scripts were built with heavy reliance on AI tools. 
+* **Asset Credits:** The extension icon was generated using AI. 
+* **Design Philosophy:** Written as a pragmatic wrapper to handle basic editor tooling and language support for Picceler—because spending hours manually writing boilerplate editor extensions by hand isn't worth the time.
+
+# Please Enjoy! 
