@@ -1,0 +1,31 @@
+{
+  "name": "vscode-picceler",
+  "displayName": "Picceler Language Support",
+  "description": "Language support for picceler",
+  "version": "0.0.1",
+  "publisher": "Robertkq",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Robertkq/vscode-picceler"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "picceler",
+      "aliases": ["Picceler", "picceler"],
+      "extensions": [".pic"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "picceler",
+      "scopeName": "source.picceler",
+      "path": "./syntaxes/picceler.tmLanguage.json"
+    }]
+  }
+}
