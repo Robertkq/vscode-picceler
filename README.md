@@ -55,6 +55,13 @@ See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 ---
 
+## Publishing
+
+Releases are published manually — see [HOWTO.md](HOWTO.md) for how to package and publish a new
+version.
+
+---
+
 ## Developer note
 
 * **AI Assistance:** This extension, its syntax highlighting configurations, and supporting scripts were built with heavy reliance on AI tools. 
