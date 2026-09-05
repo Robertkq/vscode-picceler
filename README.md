@@ -51,12 +51,7 @@ Describe specific features of your extension including screenshots of your exten
 
 ## Release Notes
 
-### 0.0.2
-
-* Initial release of Picceler VS Code extension.
-* Added syntax highlighting for core control structures, comments (`#`), strings, and all 22 TableGen dialect operations.
-* Added native bracket matching and auto-closing configurations for `.pic` files.
-* fix demo gif, add more documentation on HOWTO, AI assistance notice
+See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 ---
 
