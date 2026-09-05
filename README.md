@@ -11,11 +11,18 @@ Official syntax highlighting and language configuration for **Picceler**—a cus
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 * **Syntax Highlighting**: Rich tokenization for Picceler functions (`def`, `return`), comments (`#`), strings, numbers, and operators.
-* **Built-in Dialect Ops**: Full highlighting for native image processing intrinsics:
+* **Types**: `int64`, `float64`, `string`, `image`, `kernel` are highlighted as `storage.type` — most
+  themes (including VS Code's built-in Dark+) render this in blue.
+* **Built-in Dialect Ops**: Full highlighting for native image processing intrinsics, scoped as
+  `support.function.builtin.*` — most themes render this in yellow:
   * **I/O & Utilities**: `load_image`, `save_image`, `show_image`, `print`, `read_string`, `read_number`
+  * **Math**: `sqrt`, `pow`
   * **Filters**: `brightness`, `invert`, `sharpen`, `box_blur`, `gaussian_blur`, `edge_detect`, `emboss`, `rotate`
   * **Algorithms & Morphology**: `convolution`, `erode`, `dilate`, `diff`, `blend`, `crop`
-  * **Constants**: `string.const`, `kernel.const`
+* **Language Intelligence**: Hover docs, signature help (parameter hints while typing a call), and
+  snippet completion for every builtin function — e.g. typing `box_blur(` shows
+  `box_blur(image img, int64 radius) -> image`. This is static (a hardcoded table, not real
+  type-checking), so it can't catch a wrong-typed argument, only show the expected shape.
 * **Language Integration**: Automatic file detection for `.pic` scripts, comment toggling (`#`), and auto-closing bracket/quote pairs.
 
 ---
@@ -30,7 +37,9 @@ Describe specific features of your extension including screenshots of your exten
 ## Extension Settings
 
 
-* Currently, this extension relies on native VS Code tokenization and does not contribute custom configuration settings.
+* This extension does not contribute any custom configuration settings. Syntax highlighting relies
+  on native VS Code tokenization (the TextMate grammar); hover/signature-help/completion are
+  provided by a small bundled `extension.js` (no third-party dependencies).
 
 ---
 

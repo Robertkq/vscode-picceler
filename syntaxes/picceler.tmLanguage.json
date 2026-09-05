@@ -5,6 +5,7 @@
   "patterns": [
     { "include": "#comments" },
     { "include": "#keywords" },
+    { "include": "#types" },
 	{ "include": "#builtins" },
     { "include": "#strings" },
     { "include": "#operators" },
@@ -31,11 +32,23 @@
         }
       ]
     },
+    "types": {
+      "patterns": [
+        {
+          "name": "storage.type.picceler",
+          "match": "\\b(int64|float64|string|image|kernel)\\b"
+        }
+      ]
+    },
 	"builtins": {
       "patterns": [
         {
           "name": "support.function.builtin.io.picceler",
           "match": "\\b(load_image|save_image|show_image|print|read_string|read_number)\\b"
+        },
+        {
+          "name": "support.function.builtin.math.picceler",
+          "match": "\\b(sqrt|pow)\\b"
         },
         {
           "name": "support.function.builtin.filter.picceler",
@@ -44,10 +57,6 @@
         {
           "name": "support.function.builtin.algo.picceler",
           "match": "\\b(convolution|erode|dilate|diff|blend|crop)\\b"
-        },
-        {
-          "name": "support.function.builtin.const.picceler",
-          "match": "\\b(string\\.const|kernel\\.const)\\b"
         }
       ]
     },
